@@ -74,8 +74,6 @@ public class FilePaster {
             this.target.close();
             Index index  = new Index(this.theConcatenatedFile.getAbsolutePath(),this.indexValues);
             index.generateIndeces();
-            CreateFooter createFooter = new CreateFooter(this.theConcatenatedFile.getAbsolutePath());
-            createFooter.create();
         }catch (Exception e){
             System.out.println("failed ConcatenateFileIntoASingleDocument");
         }

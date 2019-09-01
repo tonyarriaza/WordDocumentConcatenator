@@ -199,10 +199,16 @@ public class OrderTheFiles {
         for(String OrdererName:Order){
             groupingForSorts.add(new GroupingForSort(new ArrayList<TitleandPath>(),OrdererName,this.DefinitionWeightMap));
         }
-        for(int i=0;i<toGroup.size()-1;i++){
+        for(int i=0;i<toGroup.size();i++){
             TitleandPath titleandPath= toGroup.get(i);
-            GroupingForSort group = groupingForSorts.get(this.DefinitionWeightMap.get(inTheMap(this.DefinitionWeightMap,titleandPath.title())).DefinitionWeight());
-            group.grouped().add(titleandPath);
+            if(this.DefinitionWeightMap.get(inTheMap(this.DefinitionWeightMap,titleandPath.title())).DefinitionWeight()== groupingForSorts.size()){
+                GroupingForSort group = groupingForSorts.get(this.DefinitionWeightMap.get(inTheMap(this.DefinitionWeightMap,titleandPath.title())).DefinitionWeight()-1);
+                group.grouped().add(titleandPath);
+                System.out.println(group.grouped());
+            }else {
+                GroupingForSort group = groupingForSorts.get(this.DefinitionWeightMap.get(inTheMap(this.DefinitionWeightMap, titleandPath.title())).DefinitionWeight());
+                group.grouped().add(titleandPath);
+            }
 
 
         }

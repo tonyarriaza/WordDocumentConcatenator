@@ -24,7 +24,7 @@ public class App
     {
         final long startTime = System.currentTimeMillis();
 
-      FilePaster copyDoc = new FilePaster("C:\\Users\\yourPathHere","Concant",new String[]{"16.2","Listing","14.2","Efficacy","14.1","Demographics"});
+      FilePaster copyDoc = new FilePaster("C:\\Users\\arria\\Documents\\SampleInputs","Concant",new String[]{"16.2","Listing","14.2","Efficacy"});
       copyDoc.Concatenate();
         final long endTime = System.currentTimeMillis();
         final long secondtime= (endTime-startTime)/1000;
