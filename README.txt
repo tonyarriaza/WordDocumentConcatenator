@@ -3,6 +3,8 @@ Author: Tony Arriaza
 I write this documentation in the hopes that I can contribute towards the apache foundations POI project, below is a list of classes I have developed and their potential usefulness for the project.
 I have written a piece of software that can take an input of a folder directory and parse through all of the files, find any Microsoft word documents then the software concatenates and indexes each file into a brand new file that begins a table of contents with hyperlinks to each relevant file. The software allows for user input of user defined groupings and definitions and sorts based on these groupings and definitions, this however is not required of the user and serves as an additional option. 
 Purpose: In the Clinical Research Drug Development industry the CSR (Clinical Study Report) is submitted to Regulatory Agencies, for potential approval of the sponsor drug. These reports need to adhere to certain critical Industry standards and guidelines. The Biometrics department is responsible to produce individual outputs (Tables, Listings and Figures), that are utilized in writing the CSR. Some of these outputs are attached as appendix in the CSR document, and hence is the need to concatenate all of the outputs into a single file, and this utility will help facilitate the process by automating certain activities, to manage the process more efficiently.
+
+-----Note The github repository has this README in RTF version with hyperlinks and much better readability-----
 Here is an index of each class: 
 Mainmethod
 FilePaster
